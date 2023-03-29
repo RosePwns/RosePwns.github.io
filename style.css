@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+#home-text {
+    inline-size: 120px;
+    overflow-wrap: break-word;
+    align-text: left;
+}
+  #about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#about-me-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#youtube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#youtube-text {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#about-me-photo {
+  flex: 1;
+  max-width: 50%;
+  align-self: left;
+}
+
+#about-me-video {
+  flex: 1;
+  align-self: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* responsive styles */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-me-container {
+    flex-direction: column;
+  }
+
+  #about-me-photo,
+  #about-me-video {
+    max-width: 100%;
+  }
+
+  #about-me-text {
+    margin: 20px 0;
+  }
+}
+
+
+/* CSS for Contact Page */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type=text], textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px gray;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type=submit] {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: #0062cc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.button-group button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  cursor: pointer;
+}
+
+.button-group button:hover {
+  background-color: #0062cc;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.youtube {
+  background-color: #ff0000;
+}
+
+.github {
+  background-color: #333;
+}
+
+.linkedin:hover {
+  background-color: #046293;
+}
+
+.youtube:hover {
+  background-color: #ff3333;
+}
+
+.github:hover {
+  background-color: #666;
+}
+
+/* CSS for Responsive Design */
+
+@media only screen and (max-width: 300px) {
+  .container {
+    padding: 20px;
+  }
+  
+  input[type=text], textarea {
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .button-group button {
+    margin: 5px 0;
+  }
+}
+
+#social {
+  width: 400px,
+  height: 300px
+}
